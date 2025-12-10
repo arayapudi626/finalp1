@@ -22,8 +22,11 @@ int main(){
     }
     fin.close();
 
-cout << "All airports and their counts sorted naturally: " << endl;
+cout << "All airports traffic counts: " << endl;
+for (const auto& val : airport){
+    cout << val.first << " " << val.second << endl;
 
+}
 
 
 
