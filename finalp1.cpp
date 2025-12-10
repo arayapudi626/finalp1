@@ -1,9 +1,23 @@
+//COMSC 210 | Final Part 1 | Anisha Rayapudi
+//IDE used: VS 2022
+
 #include <iostream>
 #include <string>
 #include <map>
 #include <fstream>
 
 using namespace std;
+
+void portsInrange(const map<string, int>& airport){
+    int low;
+    int high;
+for (const auto& val : airport){
+    if (val.second >= low && val.second <=high){
+        cout << val.first 
+    }
+}
+}
+
 
 int main(){
 //Milestone 1:
