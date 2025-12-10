@@ -28,6 +28,19 @@ for (const auto& val : airport){
 
 }
 
+//Milestone 2:
+int max = 0;
+for (const auto&val : airport){
+    if (val.second > max){
+        max = val.second;
+    }
+}
+cout << "Busiest airport(s) with count " << max << ": " << endl;
+for (const auto&val : airport){
+    if (val.second == max){
+        cout << val.first << " " << val.second << endl;
+    }
+}
 
 
     return 0;
