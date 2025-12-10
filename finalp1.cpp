@@ -8,14 +8,15 @@
 
 using namespace std;
 
-void portsInrange(const map<string, int>& airport){
-    int low;
-    int high;
-for (const auto& val : airport){
+void portsInrange(const map<string, int>& airport, int low, int high){
+    cout << "Airports with traffic in range [" << low << ", " << high << "]: " << endl;
+    for (const auto& val : airport){
     if (val.second >= low && val.second <=high){
-        cout << val.first 
+        cout << val.first << " " << val.second << endl;
     }
 }
+
+
 }
 
 
@@ -42,6 +43,7 @@ for (const auto& val : airport){
 
 }
 
+
 //Milestone 2:
 int max = 0;
 for (const auto&val : airport){
@@ -55,6 +57,9 @@ for (const auto&val : airport){
         cout << val.first << " " << val.second << endl;
     }
 }
+
+portsInrange(airport, 5, 8);
+portsInrange(airport, 9, 12);
 
 
     return 0;
